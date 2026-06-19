@@ -1,4 +1,5 @@
 import os
+import sys
 from datetime import date
 from kanban_manager import load_data, save_data, add_task, get_board, move_task, filter_overdue, edit_task, delete_task, STATUSES, PRIORITIES
 
@@ -115,7 +116,7 @@ def cmd_delete(data):
         print("Task not found")
 
 
-def main():
+def main_cli():
     data = load_data(DATA_FILE)
     actions = {
         "1": ("Show board", lambda: show_board(data)),
@@ -144,4 +145,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    # default: open GUI window; use 'cli' argument to force console UI
+    if len(sys.argv) > 1 and sys.argv[1] in ("--cli", "cli"):
+        main_cli()
+    else:
+        try:
+            from kanban_gui import run_gui
+            run_gui()
+        except Exception as e:
+            print("Failed to start GUI, falling back to CLI:\n", e)
+            main_cli()

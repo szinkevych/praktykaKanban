@@ -1,4 +1,23 @@
 {
-  "tasks": [],
-  "next_id": 2
+  "tasks": [
+    {
+      "id": 2,
+      "title": "звіт",
+      "description": "25 сторінок",
+      "status": "Todo",
+      "deadline": "2026-06-26",
+      "priority": "high",
+      "created": "2026-06-19T09:25:15.878664"
+    },
+    {
+      "id": 3,
+      "title": "шось",
+      "description": "двбав",
+      "status": "Done",
+      "deadline": "2026-05-30",
+      "priority": "medium",
+      "created": "2026-06-19T09:26:10.693986"
+    }
+  ],
+  "next_id": 4
 }
