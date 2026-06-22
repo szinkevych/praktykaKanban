@@ -1,22 +1,31 @@
 {
   "tasks": [
     {
-      "id": 2,
-      "title": "звіт",
-      "description": "25 сторінок",
+      "id": 1,
+      "title": "Планування міні-проєкту",
+      "description": "Скласти список задач і терміни",
       "status": "Todo",
-      "deadline": "2026-06-26",
+      "deadline": "2026-06-30",
       "priority": "high",
-      "created": "2026-06-19T09:25:15.878664"
+      "created": "2026-06-19T00:00:00"
+    },
+    {
+      "id": 2,
+      "title": "Реалізація форми входу",
+      "description": "UI для авторизації користувача",
+      "status": "In Progress",
+      "deadline": "2026-07-05",
+      "priority": "medium",
+      "created": "2026-06-19T00:00:00"
     },
     {
       "id": 3,
-      "title": "шось",
-      "description": "двбав",
+      "title": "Тестування і деплой",
+      "description": "Прописати автотести та задеплоїти",
       "status": "Done",
-      "deadline": "2026-05-30",
-      "priority": "medium",
-      "created": "2026-06-19T09:26:10.693986"
+      "deadline": "2026-06-18",
+      "priority": "low",
+      "created": "2026-06-19T00:00:00"
     }
   ],
   "next_id": 4
